@@ -21,7 +21,7 @@ async function sendMessage(hasTakenTest, listeningBand, readingBand, writingBand
         chatBox.appendChild(loadingElement);
 
         // Send the user's message to the server
-        const response = await fetch("http://localhost:3000/ieltsConsultant", {
+        const response = await fetch("https://jdogrt2uwkwy6zgxs7dcxu2ds40gyvfi.lambda-url.us-east-1.on.aws/ieltsConsultant", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
