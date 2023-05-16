@@ -152,3 +152,9 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.coffeeLink {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    align-self: center;
+}

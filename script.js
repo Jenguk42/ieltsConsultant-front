@@ -22,6 +22,7 @@ async function sendMessage(hasTakenTest, listeningBand, readingBand, writingBand
 
         // Send the user's message to the server
         const response = await fetch("https://jdogrt2uwkwy6zgxs7dcxu2ds40gyvfi.lambda-url.us-east-1.on.aws/ieltsConsultant", {
+        // const response = await fetch("http://localhost:3000/ieltsConsultant", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -73,7 +74,6 @@ function displayBotMessage(message) {
     chatBox.appendChild(botMessageElement);
     botMessages.push(message);
 }
-
 
 // Take info from the user and start the chat
 function startChat() {
